@@ -4,31 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>글쓰기 페이지</title>
+    <link rel="stylesheet" href="./css/write.css" />
   </head>
   <body>
     <form id="write-form">
-      <div>
+      <div class="image_form">
         <label for="image">이미지</label>
-        <input type="file" id="image" name="image" />
+        <div class="image_form_input">
+          <input type="file" id="image" name="image" />
+        </div>
       </div>
-      <div>
+      <div class="title_form">
         <label for="title">제목</label>
-        <input type="text" id="title" name="title" />
+        <div class="title_form_input">
+          <input type="text" id="title" name="title" placeholder="제목" />
+        </div>
       </div>
-      <div>
+      <div class="price_form">
         <label for="price">가격</label>
-        <input type="number" id="price" name="price" />
+        <div class="price_form_input">
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="가격을 입력해주세요."
+          />
+        </div>
       </div>
-      <div>
+      <div class="des_form">
         <label for="description">설명</label>
-        <input type="text" id="description" name="description" />
+        <div class="des_form_input">
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="자세히 적어주세요."
+          />
+        </div>
       </div>
-      <div>
+      <div class="place_form">
         <label for="place">장소</label>
-        <input type="text" id="place" name="place" />
+        <div class="place_form_input">
+          <input type="text" id="place" name="place" placeholder="위치 추가" />
+        </div>
       </div>
       <div>
-        <button type="submit">글쓰기 완료</button>
+        <button type="submit" class="sub_btn">글쓰기 완료</button>
       </div>
     </form>
     <script src="./write.js"></script>
